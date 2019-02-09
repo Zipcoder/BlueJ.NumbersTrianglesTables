@@ -93,7 +93,7 @@ public class NumberUtilitiesTest {
     }
 
         @Test
-    public void testGetRangeWithFiveStep() {
+        public void testGetRangeWithFiveStep() {
         // : Given
         String expected = "51015";
         int start = 5;
