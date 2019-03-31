@@ -4,19 +4,11 @@
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        String container = "";
-        for(int i = 0; i < stop; i++){
-            container += Integer.valueOf(i).toString();
-        }
-        return container;
+        return getRange(0, stop, 1);
     }
 
     public static String getRange(int start, int stop) {
-        String container = "";
-        for(int i = start; i < stop; i++){
-            container += Integer.valueOf(i).toString();
-        }
-        return container;
+            return getRange(start, stop, 1);
     }
 
 
@@ -34,7 +26,7 @@ public class NumberUtilities {
         for(int i = start + dummy; i < stop; i = i + 2){
             container += Integer.valueOf(i).toString();
         }
-        return container;
+        return container;      
     }
 
 
