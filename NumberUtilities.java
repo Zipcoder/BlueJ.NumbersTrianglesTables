@@ -30,7 +30,15 @@ public class NumberUtilities {
 
 
     public static String getOddNumbers(int start, int stop) {
-        return null;
+        String oddNumbers = "";
+        
+        for (int i = start; i<stop; i++){
+            
+            if (i%2!=0) {
+                oddNumbers = oddNumbers + i;
+            }    
+        }
+        return oddNumbers;
     }
 
 
