@@ -152,6 +152,7 @@ public class NumberUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
 
+    @Test
     public void testGetOddNumbersStartAndEndAtEven() {
         // : Given
         String expected = "579111315";
