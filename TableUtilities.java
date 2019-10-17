@@ -1,56 +1,41 @@
  
 
 public class TableUtilities {
-    
-    public static String getRow(int length, int tableSize) {
-    
-        String result = "";    
-        for (int i = 1; i <= tableSize; i++){
-            
-        String temp = Integer.toString(i * length);   
-        result = result + " ".repeat(3 - temp.length())+ temp + " |";
-    }
-        
-        result =result + "\n";
-        return result;
-    }    
- 
+
     public static String getSmallMultiplicationTable() {
         
-        String result = "";
-        
-        for(int i = 1;i <= 5; i++){
-        
-            //result += ;
-            
-        }
-        
+        String result = getMultiplicationTable(5);
         return result;
     }
 
     public static String getLargeMultiplicationTable() {
         
-        String result = "";
-        
-        for(int i = 1;i <= 5; i++){
-        
-            //result += ;
-            
-        }
-        
+        String result = getMultiplicationTable(10);
         return result;
     }
 
     public static String getMultiplicationTable(int tableSize) {
         
         String result = "";
+        int row = 1;
+        int column = 1;
         
-        for(int i = 1;i <= tableSize; i++){
-        
-            result = result + getRow(i, tableSize);//result += ;
+        for(int i = 1; i <= ((int) Math.pow(tableSize, 2)); i++){
             
-        }
-        System.out.println(result);
+            String temp = Integer.toString(column * row); 
+            result += " ".repeat(3 - temp.length()) + temp + " |";
+            
+            if (column == tableSize){
+            
+                result += "\n";
+                row++;
+                column = 1;
+            }
+            else{
+                column++;
+            }
+            
+        }    
         return result;
     }
 }
