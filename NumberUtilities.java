@@ -4,7 +4,15 @@
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        return null;
+        String rangeNumbers = "";
+        
+        for (int i = 0; i<stop; i++){
+            
+            
+                rangeNumbers = rangeNumbers + i;
+              
+        }
+        return rangeNumbers;
     }
 
     public static String getRange(int start, int stop) {
