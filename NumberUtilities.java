@@ -4,20 +4,38 @@
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        return null;
+        String range = "";
+        for (int i = 0; i < stop; i++){
+            range += i;
+        }
+        return range;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String range = "";
+        for (int i = start; i < stop; i++){
+            range += i;
+        }
+        return range;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String range = "";
+        for (int i = start; i < stop; i+=(int)step){
+            range += i;
+        }
+        return range;
     }
 
     public static String getEvenNumbers(int start, int stop) {
-        return null;
+        String range = "";
+        for (int i = start; i < stop; i++){
+            if (i % 2 == 0){
+                range += i;
+            }
+        }
+        return range;
     }
 
 
