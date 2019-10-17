@@ -16,7 +16,15 @@ public class NumberUtilities {
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String rangeNumbers = "";
+        
+        for (int i = start; i<stop; i++){
+            
+            
+                rangeNumbers = rangeNumbers + i;
+              
+        }
+        return rangeNumbers;
     }
 
 
