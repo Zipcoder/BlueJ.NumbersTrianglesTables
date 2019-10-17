@@ -1,12 +1,12 @@
 #BlueJ package file
-dependency1.from=NumberUtilitiesTest
-dependency1.to=NumberUtilities
+dependency1.from=TableUtilitiesTest
+dependency1.to=TableUtilities
 dependency1.type=UsesDependency
 dependency2.from=TriangleUtilitiesTest
 dependency2.to=TriangleUtilities
 dependency2.type=UsesDependency
-dependency3.from=TableUtilitiesTest
-dependency3.to=TableUtilities
+dependency3.from=NumberUtilitiesTest
+dependency3.to=NumberUtilities
 dependency3.type=UsesDependency
 editor.fx.0.height=722
 editor.fx.0.width=800
