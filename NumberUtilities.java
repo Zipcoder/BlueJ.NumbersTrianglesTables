@@ -2,18 +2,23 @@
 
 
 public class NumberUtilities {
-
+    static String result = "";
     public static String getRange(int stop) {
-        return null;
+        for (int i=0; i < stop ; i++) {
+         result += Integer.toString(i); }
+        return result;
     }
-
     public static String getRange(int start, int stop) {
-        return null;
+        for (int i=start; i< stop; i++) {
+         result += Integer.toString(i);}
+        return result;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        for (int i=start; i<stop; i+=step){
+         result += Integer.toString(i);}
+        return result;
     }
 
     public static String getEvenNumbers(int start, int stop) {
