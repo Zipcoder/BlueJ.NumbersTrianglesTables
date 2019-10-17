@@ -1,4 +1,8 @@
 public class NumberUtilities {
+    // String result;
+    // public NumberUtilities() {
+    //     this.result = "";
+    // }
     public static String getRange(int stop) {
         String result = "";
         for (int i = 0; i < stop; i++) {
