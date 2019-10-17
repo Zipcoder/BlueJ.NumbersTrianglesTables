@@ -3,12 +3,20 @@
 
 public class NumberUtilities {
 
+    public static String result = "";
+    
     public static String getRange(int stop) {
-        return null;
+        for(int i = 0; i < stop; i++) {
+            result = result + Integer.toString(i);
+        }
+        return result;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        for(int i = 0; start < stop; i++) {
+            result = result + Integer.toString(start);
+        }
+        return result;
     }
 
 
