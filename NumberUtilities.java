@@ -9,7 +9,7 @@ public class NumberUtilities {
         for (int i = 0; i<stop; i++){
             
             
-                rangeNumbers = rangeNumbers + i;
+                rangeNumbers += Integer.toString(i);
               
         }
         return rangeNumbers;
@@ -21,7 +21,7 @@ public class NumberUtilities {
         for (int i = start; i<stop; i++){
             
             
-                rangeNumbers = rangeNumbers + i;
+               rangeNumbers += Integer.toString(i);
               
         }
         return rangeNumbers;
@@ -38,7 +38,7 @@ public class NumberUtilities {
         for (int i = start; i<stop; i++){
             
             if (i%2==0) {
-                evenNumbers = evenNumbers + i;
+                evenNumbers += Integer.toString(i);
             }    
         }
         return evenNumbers;
@@ -51,7 +51,7 @@ public class NumberUtilities {
         for (int i = start; i<stop; i++){
             
             if (i%2!=0) {
-                oddNumbers = oddNumbers + i;
+                oddNumbers += Integer.toString(i);
             }    
         }
         return oddNumbers;
@@ -59,6 +59,13 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int exponent) {
-        return null;
+        String exponentNumbers = "";
+        
+        for (int i = start; i<=stop; i++){
+                
+                exponentNumbers += String.valueOf((int) Math.pow(i,exponent));
+                
+        }
+        return exponentNumbers;
     }
 }
