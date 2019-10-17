@@ -40,11 +40,22 @@ public class NumberUtilities {
 
 
     public static String getOddNumbers(int start, int stop) {
-        return null;
+        String range = "";
+        for (int i = start; i < stop; i++){
+            if (i % 2 != 0){
+                range += i;
+            }
+        }
+        return range;
     }
 
 
     public static String getExponentiations(int start, int stop, int exponent) {
-        return null;
+        String range = "";
+        for (int i = start; i <= stop; i++){
+            range += (int)Math.pow(i,exponent);
+            
+        }
+        return range;
     }
 }
