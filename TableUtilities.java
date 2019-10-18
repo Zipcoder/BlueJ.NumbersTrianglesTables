@@ -13,7 +13,7 @@ public class TableUtilities {
         String response = "";
         for (int i = 1; i <= tableSize; i++){
             for (int j = 1; j <= tableSize; j++) {
-                response += new String(new char[3-Integer.toString(i*j).length()]).replace("\0", " ")+ i*j +" |";
+                response += " ".repeat(3-Integer.toString(i*j).length())+ i*j +" |";
             }
             response += "\n";
         }

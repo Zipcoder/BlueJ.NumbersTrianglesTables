@@ -3,7 +3,7 @@
 public class TriangleUtilities {
 
     public static String getRow(int numberOfStars) {
-        return new String(new char[numberOfStars]).replace("\0", "*");
+        return "*".repeat(numberOfStars);
     }
     
     public static String getTriangle(int numberOfRows) {
