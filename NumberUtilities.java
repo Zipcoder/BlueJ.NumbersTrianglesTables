@@ -29,7 +29,16 @@ public class NumberUtilities {
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String rangeNumbers = "";
+        for (int i = start; i<stop; i++){
+            
+            if (i%step==0) 
+            {
+               rangeNumbers += Integer.toString(i);
+            }
+              
+        }
+        return rangeNumbers;
     }
 
     public static String getEvenNumbers(int start, int stop) {
