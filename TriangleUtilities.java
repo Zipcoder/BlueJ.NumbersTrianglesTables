@@ -1,40 +1,30 @@
 
 public class TriangleUtilities {
     public static String getRow(int numberOfStars) {
-        String width = "";
-        for (int i= 0; i < numberOfStars; i++) {
-            width = width + "*";
+        String result = "";
+        for (int i= 1; i <= numberOfStars; i++) {
+            result = result + "*";
         }
-        return width;
+        return result;
     }
 
     public static String getTriangle(int numberOfRows) {
-        String length = "";
-        for (int i= 0; i < numberOfRows; i++) {
-            length = "*\n";
+        String result = "";
+        for (int j= 1; j <= numberOfRows; j++) {
+            /*for (int j = 0; j < i; j++) {
+                length+="*";
+            }*/
+            result += getRow(j);
+            result += "\n";
         }
-        return length;
+        return result;
     }
 
     public static String getSmallTriangle() {
-        String star = "";
-        for (int i = 1; i < 5; i++){
-            for (int j = 0; j < i; j++){
-                star = star + "*";
-            }
-            star = star + "\n";
-        }
-        return star;
+        return getTriangle(4);
     }
 
     public static String getLargeTriangle() {
-        String star = "";
-        for (int i = 0; i < 10; i++){
-            for (int j = 0; j < i; j++){
-                star = star + "*";
-            }
-            star = star + "\n";
-        }
-        return star;
+        return getTriangle(9);
     }
 }
