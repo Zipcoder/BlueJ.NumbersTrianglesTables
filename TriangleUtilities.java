@@ -11,19 +11,24 @@ public class TriangleUtilities {
     }
     
     public static String getTriangle(int numberOfRows) {
-        String triangleRow = "";
-        for(int i = 1; i <= numberOfRows; i++){
-            triangleRow += "*\n";
+        StringBuilder stringBuilder = new StringBuilder();
+        for(int counter = 1; counter <= numberOfRows; counter++){
+            for(int counter2 = 1; counter2 <= counter; counter2++){
+                stringBuilder.append(getRow(1));
+            }
+            stringBuilder.append(System.lineSeparator());
         }
-        return triangleRow;
+        return stringBuilder.toString();
     }
 
 
     public static String getSmallTriangle() {
-        return null;
+        String buildTriangle = getTriangle(4);
+        return buildTriangle;
     }
 
     public static String getLargeTriangle() {
-        return null;
+        String buildTriangle = getTriangle(9);
+        return buildTriangle;
     }
 }
