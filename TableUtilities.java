@@ -20,7 +20,7 @@ public class TableUtilities {
         int row = 1;
         int column = 1;
         
-        while (column <= tableSize && row<=tableSize){
+        while (column <= tableSize && row <= tableSize){
             
             String temp = Integer.toString(column * row); 
             result += " ".repeat(3 - temp.length()) + temp + " |";
