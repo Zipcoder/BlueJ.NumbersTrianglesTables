@@ -22,7 +22,7 @@ public class NumberUtilities {
 
     public static String getRange(int start, int stop, int step) {
         String range = "";
-        for (int i = start; i < stop; i+=(int)step){
+        for (int i = start; i < stop; i+=step){
             range += i;
         }
         return range;

@@ -15,9 +15,18 @@ public class TestLoops
         for (int i = 1; i <= 10; i++){
             table += "\n";
             for (int j = 1; j <= 10; j++){
-            table +="  " + j + " |";
-            
+                int table2 = j * i;
+                int table2_2 = String.valueOf(table2).length();
+                if (table2_2 < 2){
+                table +="  " + table2 + " |";
             }
+                else if (table2_2 == 2 ){
+                table +="  " + table2 + "|";
+            }
+                else{
+                table +=" " + table2 + "|";
+            }
+        }
         }
         System.out.println(table);
         
