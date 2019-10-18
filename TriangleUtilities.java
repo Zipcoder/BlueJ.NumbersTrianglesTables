@@ -11,7 +11,11 @@ public class TriangleUtilities {
     }
     
     public static String getTriangle(int numberOfRows) {
-        return null;
+        String triangleRow = "";
+        for(int i = 1; i <= numberOfRows; i++){
+            triangleRow += "*\n";
+        }
+        return triangleRow;
     }
 
 
