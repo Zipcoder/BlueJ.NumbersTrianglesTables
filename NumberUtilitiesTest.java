@@ -91,6 +91,7 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
+    
 
         @Test
     public void testGetRangeWithFiveStep() {
