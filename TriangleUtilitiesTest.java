@@ -34,7 +34,8 @@ public class TriangleUtilitiesTest {
 
     @Test
     public void testGetTriangle_ForOneRow() {
-        // Given
+        // Given 
+        System.out.println("now testing");
         String expected = "*\n";
 
         // When
