@@ -4,29 +4,58 @@
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        return null;
+        String rangeCount = "";
+        for (int i = 0; i < stop; i ++){
+            rangeCount += i;
+        }
+        return rangeCount;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String rangeCount = "";
+        for (int i = start; i < stop; i++){
+            rangeCount += i;
+        }
+        return rangeCount;
     }
 
 
     public static String getRange(int start, int stop, int step) {
-        return null;
+        String rangeCount = "";
+        for (int i = start; i < stop; i += step){
+            rangeCount += i;
+        }    
+        return rangeCount;
     }
 
     public static String getEvenNumbers(int start, int stop) {
-        return null;
+        String evenNumbersCount = "";
+        for (int i = start; i < stop; i ++){
+            if (i % 2 == 0){
+            evenNumbersCount += i;
+   }
+}
+        return evenNumbersCount;
     }
 
 
     public static String getOddNumbers(int start, int stop) {
-        return null;
+        String oddNumber = "";
+        for (int i = start; i < stop; i ++){
+        if (i % 2 != 0) 
+        oddNumber += i;
+        }
+        return oddNumber;
     }
 
 
     public static String getExponentiations(int start, int stop, int exponent) {
-        return null;
+        String expoNum = "";
+        int cubed;
+        for (int i = start; i <= stop; i ++){
+            cubed=(int)Math.pow(i,exponent);
+            expoNum += cubed;
+    }
+        return expoNum;
     }
 }
