@@ -35,11 +35,21 @@ public class NumberUtilities {
 
 
     public static String getOddNumbers(int start, int stop) {
-        return null;
+        String result = "";
+        for (int i=start; i<stop; i++){
+            if (i%2 != 0){result +=i;}
+        }
+        return result;
     }
 
 
     public static String getExponentiations(int start, int stop, int exponent) {
-        return null;
+        String result = "";
+        int expo;
+        for (int i=start; i<=stop; i++){
+            expo = (int) Math.pow(i,exponent);
+            result +=expo;
+        }
+        return result;
     }
 }
