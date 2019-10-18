@@ -1,12 +1,15 @@
  
 
 public class TableUtilities {
-    public static String getSmallMultiplicationTable() {
-        return null;
+    public static String getSmallMultiplicationTable(int n) {
+        String largeTable = getMultiplicationTable(n);
+        return largeTable;
     }
 
-    public static String getLargeMultiplicationTable() {
-        return null;
+    public static String getLargeMultiplicationTable(int n) {
+        String largeTable = getMultiplicationTable(n);
+        return largeTable;
+        
     }
 
     public static String getMultiplicationTable(int tableSize) {
@@ -27,11 +30,22 @@ public class TableUtilities {
         
         String table = "";
         for (int i = 1; i <= tableSize; i++){
-            table += "\n";
-            for (int j = 1; j <= tableSize; j++){
-            table +="  " + j + " |";
             
+            for (int j = 1; j <= tableSize; j++){
+                int table2 = j * i;
+                int lengthOfString = String.valueOf(table2).length();
+                if (lengthOfString < 2){
+                table +="  " + table2 + " |";
             }
+                else if (lengthOfString == 2 ){
+                table +=" " + table2 + " |";
+            }
+                else{
+                table +="" + table2 + " |";
+            }
+            
+        }
+        table += "\n";
         }
         System.out.println(table);
         return table;
