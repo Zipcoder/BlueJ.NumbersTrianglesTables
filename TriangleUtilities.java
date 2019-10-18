@@ -2,20 +2,28 @@
 public class TriangleUtilities {
     
     public static String getRow(Integer numberOfStars) {
-        String row = "";
-        for(int i = 1; i <= numberOfStars; i++){
+        String stars = "*";
+        String row = stars.repeat(numberOfStars);
+        /*for(int i = 1; i <= numberOfStars; i++){
             row += "*";
-        }
+        }*/
         return row;
     }
 
     public static String getTriangle(int numberOfRows) {
-        String triangle = "";
+        //Removed the nested FOR loop
+        
+        StringBuilder sb = new StringBuilder();
+        String stars = "*";
         for(int i = 1; i <= numberOfRows; i++){
+            sb.append(stars.repeat(i));
+            sb.append("\n");
+        /*(int i = 1; i <= numberOfRows; i++){
             triangle += getRow(i);
             triangle += "\n";
-        }
-        return triangle;
+        }*/
+    }
+        return sb.toString();
     }
     public static String getSmallTriangle() {
         return getTriangle(4);
