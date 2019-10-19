@@ -1,21 +1,29 @@
- 
 
 public class TriangleUtilities {
-
     public static String getRow(int numberOfStars) {
-        return null;
-    }
-    
-    public static String getTriangle(int numberOfRows) {
-        return null;
+        String rowOfStars = "";
+        for(int i = 1; i <= numberOfStars; i++) {
+            rowOfStars += "*";
+        }
+        return rowOfStars;
     }
 
+    public static String getTriangle(int numberOfRows) {
+        String triangleRow = "";
+
+        for(int i = 1; i <= numberOfRows; i++){
+            triangleRow += getRow(i) + "\n";
+        }
+        return triangleRow;
+    }
 
     public static String getSmallTriangle() {
-        return null;
+        int numberOfRows = 4;
+        return getTriangle(numberOfRows);
     }
 
     public static String getLargeTriangle() {
-        return null;
+        int numberOfRows = 9;
+        return getTriangle(numberOfRows);
     }
 }
