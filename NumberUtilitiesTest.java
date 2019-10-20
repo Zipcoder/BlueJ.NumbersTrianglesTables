@@ -10,6 +10,7 @@ public class NumberUtilitiesTest {
         // : Given
         String expected = "012";
         int stop = 3;
+        
 
         // : When
         String actual = NumberUtilities.getRange(stop);
