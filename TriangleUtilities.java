@@ -12,8 +12,9 @@ public class TriangleUtilities {
         String string = "";
         for (int i = 1; i <= numberOfRows; i++)
         {  
-            for (int j = 1; j <= i; j++)
-            string = string + "*";
+            for (int j = 1; j <= i; j++) {
+            string = string + "*"; 
+        }
             string = string + "\n";
         }   return string;
     } 
@@ -25,7 +26,9 @@ public class TriangleUtilities {
             for (int j = 1; j <= i; j++)
             string = string + "*";
             string = string + "\n";
-        }   return string;
+        }
+        
+        return string;
     }
 
     public static String getLargeTriangle() {
