@@ -40,7 +40,7 @@ public class TableUtilitiesTest {
                 "  9 | 18 | 27 | 36 | 45 | 54 | 63 | 72 | 81 | 90 |\n" +
                 " 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 |100 |\n";
 
-        String actual = TableUtilities.getLargeMultiplicationTable();
+        String actual = TableUtilities.getLargeMultiplicationTable(10);
         Assert.assertEquals(expected, actual);
     }
 
@@ -54,7 +54,7 @@ public class TableUtilitiesTest {
                         "  4 |  8 | 12 | 16 | 20 |\n" +
                         "  5 | 10 | 15 | 20 | 25 |\n";
 
-        String actual = TableUtilities.getSmallMultiplicationTable();
+        String actual = TableUtilities.getSmallMultiplicationTable(5);
         Assert.assertEquals(expected, actual);
     }
 
