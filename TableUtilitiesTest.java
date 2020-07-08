@@ -54,7 +54,7 @@ public class TableUtilitiesTest {
                         "  4 |  8 | 12 | 16 | 20 |\n" +
                         "  5 | 10 | 15 | 20 | 25 |\n";
 
-        String actual = TableUtilities.getSmallMultiplicationTable();
+        String actual = TableUtilities.getSmallMultiplicationTable(5);
         Assert.assertEquals(expected, actual);
     }
 
