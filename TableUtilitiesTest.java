@@ -16,7 +16,7 @@ public class TableUtilitiesTest {
         Assert.assertEquals(expected, actual);
     }
     
-        @Test
+    @Test
     public void testGetMulplicationTable_forTwo(){
         String expected = "  1 |  2 |\n" +
                           "  2 |  4 |\n";
