@@ -52,11 +52,10 @@ public class NumberUtilities {
 
 
     public static String getExponentiations(int start, int stop, int exponent) {
-        String numbers = "";
-        StringBuffer exp = new StringBuffer();
+        StringBuilder exp = new StringBuilder();
         for(int i = start; i <= stop; i++){
-                numbers = exp.append(Math.round(Math.pow(i,exponent))).toString();
+                exp = exp.append(Math.round(Math.pow(i,exponent)));
         }
-        return numbers;
+        return exp.toString();
     }
 }

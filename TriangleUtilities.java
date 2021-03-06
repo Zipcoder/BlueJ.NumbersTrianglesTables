@@ -3,49 +3,41 @@
 public class TriangleUtilities {
 
     public static String getRow(int numberOfStars) {
-        String stars = "";
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i <= numberOfStars; i++){
-            stars = sb.append("*").toString();
+            sb = sb.append("*");
         }
-        return stars;
+        return sb.toString();
     }
     
     public static String getTriangle(int numberOfRows) {
-        String rows = "";
         StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < numberOfRows; i++){
-            rows = sb.append("*").toString();
+        for(int i = 0; i <= numberOfRows; i++){
+            sb = sb.append("*");
         }
-        return rows;
+        return sb.toString();
     }
 
 
     public static String getSmallTriangle() {
-        String smallTriangle = "";
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < 4; i++){
-            for(int j = 0; j < 4; j++){
-                if(j <= i){
-                    smallTriangle = sb.append("*").toString();
-                }
+            for(int j = 0; j <= i; j++){
+                sb = sb.append("*");
             }
-            smallTriangle = sb.append("\n").toString();
+            sb = sb.append("\n");
         }
-        return smallTriangle;
+        return sb.toString();
     }
 
     public static String getLargeTriangle() {
-        String largeTriangle = "";
         StringBuilder sb = new StringBuilder();
         for(int i = 0; i < 9; i++){
-            for(int j = 0; j < 9; j++){
-                if(j <= i){
-                    largeTriangle = sb.append("*").toString();
-                }
+            for(int j = 0; j <= i; j++){
+                    sb = sb.append("*");
             }
-            largeTriangle = sb.append("\n").toString();
+            sb= sb.append("\n");
         }
-        return largeTriangle;
+        return sb.toString();
     }
 }
