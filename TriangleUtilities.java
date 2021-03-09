@@ -10,28 +10,18 @@ public class TriangleUtilities {
             String strStars = Character.toString(starArr[i]);
             output += strStars;
         }
+        System.out.print(output);
         return output;
     }
     
     public static String getTriangle(int numberOfRows) {
-         int i, j;
-         String output = "";
-        // outer loop to handle number of rows
-        //  n in this case
-        for(i=0; i<=numberOfRows; i++)
-        { String holder = "";
- 
-            //  inner loop to handle number of columns
-            //  values changing acc. to outer loop    
-            for(j=0; j<i; j++)
-            {
-                // printing stars
-                holder += getRow(i) + "\n";
+        int i, j;
+        String output = "";
+        for (i = 0; i < numberOfRows; i++) {
+            for (j = 0; j <= i; j++) {
+                output += "*";
             }
- 
-            // ending line after each row
-            //System.out.println();
-            output += holder;
+            output += "\n";
         }
         System.out.print(output);
         return output;
