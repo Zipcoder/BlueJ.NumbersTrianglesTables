@@ -1,4 +1,4 @@
- 
+
 
 
 import org.junit.Assert;
@@ -11,23 +11,23 @@ public class TriangleUtilitiesTest {
         //Given
         String expected = "*";
         int width = 1;
-        
+
         //When
         String actual = TriangleUtilities.getRow(width);
-        
+
         //Then
         Assert.assertEquals(expected, actual);
     }
-    
+
     @Test
     public void testGetRow_ForBigWidth() {
         //Given
         String expected = "********************";
         int width = 20;
-        
+
         //When
         String actual = TriangleUtilities.getRow(width);
-        
+
         //Then
         Assert.assertEquals(expected, actual);
     }
@@ -39,30 +39,30 @@ public class TriangleUtilitiesTest {
 
         // When
         String actual = TriangleUtilities.getTriangle(1);
-        
+
         // Then
         Assert.assertEquals(expected, actual);
     }
-    
+
     @Test
     public void testGetTriangle_ForSmallTriangle() {
         // Given
         String expected =
-                        "*\n" +
+                "*\n" +
                         "**\n" +
                         "***\n";
 
         // When                
         String actual = TriangleUtilities.getTriangle(3);
-        
+
         // Then
         Assert.assertEquals(expected, actual);
     }
-    
+
     @Test
     public void testGetTriangle_ForBigTriangle() {
         String expected =
-                        "*\n" +
+                "*\n" +
                         "**\n" +
                         "***\n" +
                         "****\n" +
@@ -80,14 +80,14 @@ public class TriangleUtilitiesTest {
     public void testGetLargeTriangle() {
         String expected =
                 "*\n" +
-                "**\n" +
-                "***\n" +
-                "****\n" +
-                "*****\n" +
-                "******\n" +
-                "*******\n" +
-                "********\n" +
-                "*********\n";
+                        "**\n" +
+                        "***\n" +
+                        "****\n" +
+                        "*****\n" +
+                        "******\n" +
+                        "*******\n" +
+                        "********\n" +
+                        "*********\n";
         String actual = TriangleUtilities.getLargeTriangle();
         Assert.assertEquals(expected, actual);
     }
@@ -96,7 +96,7 @@ public class TriangleUtilitiesTest {
     @Test
     public void testGetSmallTriangle() {
         String expected =
-                        "*\n" +
+                "*\n" +
                         "**\n" +
                         "***\n" +
                         "****\n";
