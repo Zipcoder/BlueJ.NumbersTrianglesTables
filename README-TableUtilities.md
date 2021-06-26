@@ -39,7 +39,7 @@
 ## `String getSmallMultiplicationTable()`
 * **Description**
     * Generate a `String` representation of a multiplication table whose dimensions are `4` by `4`
-	
+    
 ### Example 1
 * Sample Script
 
@@ -107,7 +107,7 @@
 * **Description**
     * Generate a `String` representation of a multiplication table whose dimensions are `9` by `9`
 
-	
+    
 ### Example
 * Sample Script
 
@@ -176,7 +176,7 @@
 * **Description**
     * Given one integer, `width`, generate a `String` representation of a multiplication table whose dimensions are `width` by `width`
 
-	
+    
 ### Example 1
 * Sample Script
 
