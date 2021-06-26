@@ -125,7 +125,7 @@
 * **Description**
     * Given one integer, `n`, generate a `String` representation of a triangle whose base height and width is equal to `n`.
 
-	
+    
 ### Example
 * Sample Script
 
