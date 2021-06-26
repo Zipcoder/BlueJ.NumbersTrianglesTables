@@ -1,5 +1,10 @@
 # TableUtilities
-* Ensure each of the test cases in the class [TableUtilitiesTest](https://github.com/Zipcoder/CR-MicroLabs-Loops-NumbersTrianglesTables/blob/master/src/test/java/io/zipcoder/microlabs/mastering_loops/TableUtilitiesTest.java) successfully passes upon completion of each of the method stubs in the class [TableUtilities](https://github.com/Zipcoder/CR-MicroLabs-Loops-NumbersTrianglesTables/blob/master/src/main/java/io/zipcoder/microlabs/mastering_loops/TableUtilities.java).
+* Ensure each of the test cases in the class 
+* [TableUtilitiesTest]
+* (https://github.com/Zipcoder/CR-MicroLabs-Loops-NumbersTrianglesTables/blob/master/src/test/java/io/zipcoder/microlabs/mastering_loops/TableUtilitiesTest.java) 
+* successfully passes upon completion of each of the 
+* method stubs in the class [TableUtilities]
+* (https://github.com/Zipcoder/CR-MicroLabs-Loops-NumbersTrianglesTables/blob/master/src/main/java/io/zipcoder/microlabs/mastering_loops/TableUtilities.java).
     * `String getLargeMultiplicationTable()`
     * `String getSmallMultiplicationTable()`
     * `String getMultiplicationTable(int width)`
@@ -39,7 +44,7 @@
 ## `String getSmallMultiplicationTable()`
 * **Description**
     * Generate a `String` representation of a multiplication table whose dimensions are `4` by `4`
-	
+    
 ### Example 1
 * Sample Script
 
@@ -107,7 +112,7 @@
 * **Description**
     * Generate a `String` representation of a multiplication table whose dimensions are `9` by `9`
 
-	
+    
 ### Example
 * Sample Script
 
@@ -176,7 +181,7 @@
 * **Description**
     * Given one integer, `width`, generate a `String` representation of a multiplication table whose dimensions are `width` by `width`
 
-	
+    
 ### Example 1
 * Sample Script
 
