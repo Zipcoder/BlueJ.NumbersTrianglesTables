@@ -4,11 +4,24 @@
 public class NumberUtilities {
 
     public static String getRange(int stop) {
-        return null;
+        String lau = "";
+        for (int i = 0; i <= 11; i++){
+        lau += i;
+            
+        }
+        return lau;
     }
 
     public static String getRange(int start, int stop) {
-        return null;
+        String h = "";
+        for (int a = 5; a <= 11; a++){
+            for (int j = 12; j <=19; j++){
+                
+            }
+        h += a;
+            
+        }
+        return h;
     }
 
 
