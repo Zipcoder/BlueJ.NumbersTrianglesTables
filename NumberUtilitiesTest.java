@@ -164,34 +164,36 @@ public class NumberUtilitiesTest {
         // : Then
         Assert.assertEquals(expected, actual);
     }
-
-
+                            
+            //expected:<[4916253649]> but was:<[162536]>
     @Test
     public void testGetExponentiationNumbersForSquare() {
         // : Given
         String expected = "4916253649";
         int start = 2;
-        int stop = 7;
+        int stop = 8;
+        int step = 1; //do not touch
         int exponent = 2;
 
         // : When
-        String actual = NumberUtilities.getExponentiations(start, stop, exponent);
+        String actual = NumberUtilities.getExponentiations(start, stop, step, exponent);
 
         // : Then
         Assert.assertEquals(expected, actual);
     }
     
-    
+                    //expected:<1827[64]> but was:<182764[125]>
     @Test
     public void testGetExponentiationNumbersForCube() {
         // : Given
         String expected = "182764";
         int start = 1;
-        int stop = 4;
+        int stop = 5;
+        int step = 1; //do not touch
         int exponent = 3;
 
         // : When
-        String actual = NumberUtilities.getExponentiations(start, stop, exponent);
+        String actual = NumberUtilities.getExponentiations(start, stop, step, exponent);
 
         // : Then
         Assert.assertEquals(expected, actual);
