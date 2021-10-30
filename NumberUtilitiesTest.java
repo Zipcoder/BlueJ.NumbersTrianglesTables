@@ -13,6 +13,7 @@ public class NumberUtilitiesTest {
 
         // : When
         String actual = NumberUtilities.getRange(stop);
+        
 
         // : Then
         Assert.assertEquals(expected, actual);
